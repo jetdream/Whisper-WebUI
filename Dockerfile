@@ -17,10 +17,10 @@ WORKDIR /app
 ADD . /app
 
 # Run install.sh via sh to create virtual environment
-RUN sh Install.sh
+RUN bash /Install.sh
 
 # Make port 7860 available to the world outside this container
 EXPOSE 7860
 
-# Run start-webui.sh script via sh when the container launches
-CMD ["sh", "start-webui.sh"]
+# Run start-webui.sh script via bash when the container launches
+CMD ["bash", "start-webui.sh"]
