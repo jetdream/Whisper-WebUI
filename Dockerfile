@@ -19,6 +19,9 @@ ADD . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Run install.sh to create virtual environment
+RUN ./install.sh
+
 # Make port 7860 available to the world outside this container
 EXPOSE 7860
 
