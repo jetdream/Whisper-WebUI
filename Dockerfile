@@ -17,7 +17,7 @@ WORKDIR /app
 ADD . /app
 
 # Run install.sh via sh to create virtual environment
-RUN bash /Install.sh
+RUN bash Install.sh
 
 # Make port 7860 available to the world outside this container
 EXPOSE 7860
