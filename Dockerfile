@@ -25,5 +25,5 @@ RUN ./Install.sh
 # Make port 7860 available to the world outside this container
 EXPOSE 7860
 
-# Run start-webui.sh when the container launches
-CMD ["./start-webui.sh"]
+# Run start-webui.sh script via sh when the container launches
+CMD ["sh", "start-webui.sh"]
